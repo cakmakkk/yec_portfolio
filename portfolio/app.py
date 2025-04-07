@@ -19,7 +19,7 @@ st.sidebar.markdown("""
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-informational?style=flat&logo=github&logoColor=white&color=black)](https://github.com/cakmakkk)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-informational?style=flat&logo=linkedin&logoColor=white&color=0A66C2)](https://www.linkedin.com/in/yunus-emre-%C3%A7akmak-0a850b256/)
 """)
-with open("cv/YunusEmreCakmak_cvTrk.pdf", "rb") as pdf_file:
+with open("portfolio/cv/YunusEmreCakmak_cvTrk.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 st.sidebar.download_button(label="📄 CV'yi İndir", data=PDFbyte, file_name="YunusEmreCakmak_cvTrk.pdf", mime='application/pdf')
 
@@ -126,15 +126,15 @@ elif menu == "Projeler":
             if project["title"] == "Müşteri Segmentasyonu":
                 st.subheader("📊 Kümeleme Görselleri")
 
-                st.image("photos/must1.png", caption="Kümeleme Skorları", use_column_width=True)
+                st.image("portfolio/photos/must1.png", caption="Kümeleme Skorları", use_column_width=True)
 
                 images = [
-                    ("photos/must2.png", "PCA Görselleştirme"),
-                    ("photos/must3.png", "t-SNE Görselleştirme"),
-                    ("photos/must4.png", "SIBSP vs Cluster"),
-                    ("photos/must5.png", "AGE vs Cluster"),
-                    ("photos/must6.png", "FARE vs Cluster"),
-                    ("photos/must7.png", "PCLASS vs Cluster"),
+                    ("portfolio/photos/must2.png", "PCA Görselleştirme"),
+                    ("portfolio/photos/must3.png", "t-SNE Görselleştirme"),
+                    ("portfolio/photos/must4.png", "SIBSP vs Cluster"),
+                    ("portfolio/photos/must5.png", "AGE vs Cluster"),
+                    ("portfolio/photos/must6.png", "FARE vs Cluster"),
+                    ("portfolio/photos/must7.png", "PCLASS vs Cluster"),
                 ]
 
                 for i in range(0, len(images), 3):
@@ -147,15 +147,15 @@ elif menu == "Projeler":
                                 st.image(img, caption=images[i + j][1])
 
             if project["title"] == "Coğrafi Bilgi Sistemi (GIS) Web Uygulaması":
-                st.image("photos/gis.png", caption="GIS Web Uygulaması Görseli", use_column_width=True)
+                st.image("portfolio/photos/gis.png", caption="GIS Web Uygulaması Görseli", use_column_width=True)
 
             if project["title"] == "Obezite Tahmini":
-                st.image("photos/obz1.png", caption="Obezite Tahmin Sonuçları", width=400)
+                st.image("portfolio/photos/obz1.png", caption="Obezite Tahmin Sonuçları", width=400)
 
             if project["title"] == "CNN ile Beyin Tümörü Tespiti":
-                st.image("photos/mri1.png", caption="Beyin Tumor mri", width=400)
+                st.image("portfolio/photos/mri1.png", caption="Beyin Tumor mri", width=400)
 
             if project["title"] == "Araç Sayma ve Takip Uygulaması":
-                st.image("photos/obj1.png", caption="Car Detection", use_column_width=True)
+                st.image("portfolio/photos/obj1.png", caption="Car Detection", use_column_width=True)
 
             st.markdown("---")
