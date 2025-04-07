@@ -37,7 +37,7 @@ st.sidebar.markdown("""
 if menu == "Hakkımda":
     col1, col2 = st.columns([1,6])
     with col1:
-        st.image("photos/ves1.png", width=140)
+        st.image("portfolio/photos/ves1.png", width=140)
     with col2:
         st.markdown("""
         Gazi Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim.
