@@ -70,6 +70,12 @@ if menu == "Hakkımda":
     - A'dan Z'ye Yapay Zeka Eğitimi — Gazi Üni. Yapay Zeka Topluluğu
     """)
 
+    st.subheader("Topluluklar")
+    st.markdown("""
+    - Merküt (Teknofest-Havacılıkta Yapay Zeka-Takım Kaptanı)
+    - Gazi Üniversitesi Yazılım Araştırma ve Geliştirme Topl.
+    - Gazi Üniversitesi Havacılık Topluluğu (Yamaç Paraşütü)
+    """)
 # --- PROJELER --- #
 elif menu == "Projeler":
     st.title("📁 Projeler")
